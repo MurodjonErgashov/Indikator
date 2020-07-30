@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// Distdagi filelar
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "./dist/assets/libs/air-datepicker/css/datepicker.min.css";
+import "./dist/assets/libs/jqvmap/jqvmap.min.css";
+import "./dist/assets/css/bootstrap.min.css";
+import "./dist/assets/css/icons.min.css";
+import "./dist/assets/css/app.css";
+
+import "./App.css";
+
+import Header from "./Components/Header";
+import VertikalMenu from "./Components/VertikalMenu";
+import MainContent from "./Components/Dashboard/MainContent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // <div data-topbar="colored">
+    <div className="layout-wrapper">
+      <Header />
+      <VertikalMenu />
+      <MainContent />
     </div>
+    // </div>
   );
 }
 
